@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <title>Owner Login Page</title>
+</head>
+
+<body>
+<header style="margin: 75px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LOGIN PAGE</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="makereservation.html"><i class="fa fa-book"></i> Make Reservations</a>
+                    </li>
+                    <li>
+                        <a href="cancelreservation.html"><i class="fa fa-book"></i> Cancel Reservations</a>
+                    </li>
+                    <li>
+                        <a href="partyorder.html"><i class="fa fa-book"></i> Party Orders</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+                    </li>
+                    <li class="active">
+                        <a href="adminlogin.html"><i class="fa fa-cog"></i> Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container">
+        <div class="jumbotron">
+            <form class="form-signin">
+                <h2 class="form-signin-heading">LOGIN TO YOUR ACCOUNT</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="sr-only">Registered Email Address : </label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                               autofocus="">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputPassword" class="sr-only">Password : </label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                               required="">
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <br>
+                <div class="col-md-3">
+                    <button class="btn btn-group-lg btn-primary btn-group-justified" type="submit">Sign in</button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
