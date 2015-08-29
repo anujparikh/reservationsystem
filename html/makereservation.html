@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <title>Make Reservation</title>
+</head>
+
+<body>
+<header style="margin: 75px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">ONLINE RESERVATION</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="makereservation.html"><i class="fa fa-book"></i> Reservations</a>
+                    </li>
+                    <li>
+                        <a href="cancelreservation.html"><i class="fa fa-book"></i> Change/Cancel Res</a>
+                    </li>
+                    <li>
+                        <a href="partyorder.html"><i class="fa fa-book"></i> Party Orders</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text"><i><small>Already have account?</small></i></p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle admbtn" data-toggle="dropdown"><b>Admin Login</b></a>
+                        <ul class="dropdown-menu" id="login-dp">
+                            <li class="row">
+                                <div class="col-lg-12">
+                                    <form class="form" role="form" method="post" action="reservationdetails.html" accept-charset="UTF-8"
+                                          id="login-nav">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                                   placeholder="Email address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                                   placeholder="Password" required>
+
+                                            <div class="help-block text-right"><a href="">Forget the password ?</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> keep me logged-in
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container">
+        <div class="container">
+            <div class="page-header"><h2> MAKE A RESERVATION !!</h2></div>
+            <br>
+
+            <form role="form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="fName"> First Name : </label>
+                        <input type="text" class="form-control" id="fName" placeholder="Enter your First name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="lName"> Last Name : </label>
+                        <input type="text" class="form-control" id="lName" placeholder="Enter your Last name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phno"> Phone Number : </label>
+                        <input type="number" class="form-control" id="phno" placeholder="Enter your Phone number">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email"> Email Address : </label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="date"> Date : </label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="fTime"> From Time : </label>
+                        <input type="time" class="form-control" id="fTime">
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="tTime"> To Time : </label>
+                        <input type="time" class="form-control" id="tTime">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <label for="noofperson" title="If more than 16 ppl, make seperate reservations"> No of people
+                            for Reservation : </label>
+                        <input type="number" class="form-control" id="noofperson" min="1" max="16"
+                               placeholder="Number of person for a table">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <label for="comment">List down specific requirement to be taken care of :</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2"><button type="submit" class="btn btn-group-lg btn-primary form-control">Make Reservation</button></div>
+                    <div class="col-lg-2"><button type="reset" class="btn btn-group-lg btn-primary form-control">Clear</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- include javascript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

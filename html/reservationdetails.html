@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Admin Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.vertical-tabs.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="reservationdetails.html"><i class="fa fa-home"></i> ADMIN HOME PAGE</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-right navbar-nav">
+                    <li class="navbar-text">Welcome <b>Anuj Parikh</b></li>
+                    <li><a class="navbar-header" href="home.html"> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br><br>
+
+<div class="jumbotron">
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="nav active"><a href="#listofreservations" data-toggle="tab"><i class="fa fa-list"></i> List of
+                Reservations</a></li>
+            <li class="nav"><a href="#viewseatingarea" data-toggle="tab"><i class="fa fa-info-circle"></i> View Seating
+                Area</a></li>
+            <li class="nav"><a href="#makereservation" data-toggle="tab"><i class="fa fa-calendar-check-o"></i> Make a
+                Reservation</a></li>
+            <li class="nav"><a href="#changereservation" data-toggle="tab"><i class="fa fa-pencil"></i> Edit a
+                Reservation</a></li>
+            <li class="nav"><a href="#profile" data-toggle="tab"><i class="fa fa-cog"></i> Profile & Settings</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="listofreservations">
+                <br>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="pagination pull-right">
+                    <li><a href="#">&laquo;</a>
+                    </li>
+                    <li class="active"><a href="#">1</a>
+                    </li>
+                    <li><a href="#">2</a>
+                    </li>
+                    <li><a href="#">3</a>
+                    </li>
+                    <li><a href="#">4</a>
+                    </li>
+                    <li><a href="#">5</a>
+                    </li>
+                    <li><a href="#">&raquo;</a>
+                    </li>
+                </ul>
+                <table class="table table-condensed table-striped">
+                    <thead>
+                    <tr>
+                        <th>CNF#</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Size#</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary btn-group-xs" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Anuj Pairkh</td>
+                        <td>05/10/2014</td>
+                        <td>1:30 PM</td>
+                        <td>3:00 PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="viewseatingarea">
+                <br>
+
+                <div class="container">
+                    <table class="table table-condensed table-striped">
+                        <thead>
+                        <tr>
+                            <th>Table#</th>
+                            <th>Size</th>
+                            <th>Status</th>
+                            <th>Since</th>
+                            <th>CNF#</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>Occupied</td>
+                            <td>5:30PM</td>
+                            <td>
+                                <button type="button" class="btn btn-link">ABC123</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>Available</td>
+                            <td>-</td>
+                            <td>
+                                <span class="btn-filler"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>Occupied</td>
+                            <td>5:30PM</td>
+                            <td>
+                                <button type="button" class="btn btn-link">ABC123</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>Available</td>
+                            <td>-</td>
+                            <td>
+                                <span class="btn-filler"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>Occupied</td>
+                            <td>5:30PM</td>
+                            <td>
+                                <button type="button" class="btn btn-link">ABC123</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>Available</td>
+                            <td>-</td>
+                            <td>
+                                <span class="btn-filler"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>Occupied</td>
+                            <td>5:30PM</td>
+                            <td>
+                                <button type="button" class="btn btn-link">ABC123</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>Available</td>
+                            <td>-</td>
+                            <td>
+                                <span class="btn-filler"></span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="makereservation">
+                <br>
+
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="fName"> First Name : </label>
+                            <input type="text" class="form-control" id="fName" placeholder="Enter your First name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lName"> Last Name : </label>
+                            <input type="text" class="form-control" id="lName" placeholder="Enter your Last name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phno"> Phone Number : </label>
+                            <input type="number" class="form-control" id="phno" placeholder="Enter your Phone number">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email"> Email Address : </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="date"> Date : </label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="fTime"> From Time : </label>
+                            <input type="time" class="form-control" id="fTime">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="tTime"> To Time : </label>
+                            <input type="time" class="form-control" id="tTime">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="noofperson" title="If more than 16 ppl, make seperate reservations"> No of
+                                people
+                                for Reservation : </label>
+                            <input type="number" class="form-control" id="cnoofperson" min="1" max="16"
+                                   placeholder="Number of person for a table">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="comment">List down specific requirement to be taken care of :</label>
+                                <textarea class="form-control" rows="5" id="ccomment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-group-lg btn-primary form-control">Make Reservation
+                            </button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="reset" class="btn btn-group-lg btn-primary form-control">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="changereservation">
+                <br>
+
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="reservationCode"> Unique Reservation Code :</label>
+                            <input type="text" class="form-control" id="reservationCode"
+                                   placeholder="Enter unique reservation code">
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="hidden2">.</label>
+                            <button type="submit" class="btn btn-group-lg btn-primary form-control">Cancel Reservation
+                            </button>
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="hidden2">.</label>
+                            <button type="submit" class="btn btn-group-lg btn-primary form-control">Edit Reservation
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="cdate"> Date : </label>
+                            <input type="date" class="form-control" id="cdate">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="cfTime"> From Time : </label>
+                            <input type="time" class="form-control" id="cfTime">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="ctTime"> To Time : </label>
+                            <input type="time" class="form-control" id="ctTime">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="noofperson" title="If more than 16 ppl, make seperate reservations"> No of
+                                people
+                                for Reservation : </label>
+                            <input type="number" class="form-control" id="noofperson" min="1" max="16"
+                                   placeholder="Number of person for a table">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="comment">List down specific requirement to be taken care of :</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-group-lg btn-primary form-control">Submit Changes
+                            </button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="reset" class="btn btn-group-lg btn-primary form-control">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <br>
+
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active"><a href="#info" data-toggle="tab"><i class="fa fa-user"></i> Restaurant
+                            Profile</a></li>
+                        <li><a href="#assigntable" data-toggle="tab"><i class="fa fa-pencil"></i> Assign or Change Table</a>
+                        </li>
+                        <li><a href="#rSettings" data-toggle="tab"><i class="fa fa-cog"></i> Restaurant Settings</a>
+                        </li>
+                        <li><a href="#contactList" data-toggle="tab"><i class="fa fa-phone"></i> Contact List</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="info">
+                            <section>
+                                <div class="container">
+                                    <div class="container">
+                                        <br>
+
+                                        <form class="form-inline" role="form">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="rName"> Name : </label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" id="rName"
+                                                           value="My Restaurant">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="rEmail"> Email Address : </label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="email" class="form-control" id="rEmail"
+                                                           value="contactus@abc.com">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="contactNo"> Contact Number : </label>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <input type="number" class="form-control" id="contactNo"
+                                                           value="24811111111">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="rAddress"> Restaurant Address : </label>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <textarea type="text" class="form-control" id="rAddress" rows="4"
+                                                              cols="40">5440 Cass Ave
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <button type="submit"
+                                                            class="btn btn-group-lg btn-primary form-control">Submit
+                                                        Changes
+                                                    </button>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="reset"
+                                                            class="btn btn-group-lg btn-primary form-control">Clear
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" id="assigntable">
+                            <br>
+
+                            <div class="container">
+                                <table class="table table-condensed table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Table#</th>
+                                        <th>Size</th>
+                                        <th>Status</th>
+                                        <th>Since</th>
+                                        <th>CNF#</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>Occupied</td>
+                                        <td>5:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">Assign this table</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>Occupied</td>
+                                        <td>5:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">Assign this table</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>Occupied</td>
+                                        <td>5:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">Assign this table</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>Occupied</td>
+                                        <td>5:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">Assign this table</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="rSettings">
+                            <section>
+                                <div class="container">
+                                    <div class="container">
+                                        <br>
+
+                                        <form class="form-inline" role="form">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="autoassign"> Auto Assign Table : </label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <label>
+                                                        <input id="autoassign" type="checkbox">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="rEmail"> Days Closed : </label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <select name="days" multiple>
+                                                        <option value="sunday"> Sunday</option>
+                                                        <option value="monday"> Monday</option>
+                                                        <option value="tuesday"> Tuesday</option>
+                                                        <option value="wednesday"> Wednesday</option>
+                                                        <option value="thursday"> Thursday</option>
+                                                        <option value="friday"> Friday</option>
+                                                        <option value="saturday"> Saturday</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label for="opentime"> Restaurant Opening Time : </label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="time" class="form-control" id="opentime">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label for="closetime"> Restaurant Closing Time : </label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="time" class="form-control" id="closetime">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <button type="submit"
+                                                            class="btn btn-group-lg btn-primary form-control">Submit
+                                                        Changes
+                                                    </button>
+                                                    <button type="reset"
+                                                            class="btn btn-group-lg btn-primary form-control">Clear
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" id="contactList">
+
+                            <br>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search by Name"
+                                       id="searchName">
+
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit"><i
+                                            class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="pagination pull-right">
+                                <li><a href="#">&laquo;</a>
+                                </li>
+                                <li class="active"><a href="#">1</a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                <li><a href="#">3</a>
+                                </li>
+                                <li><a href="#">4</a>
+                                </li>
+                                <li><a href="#">5</a>
+                                </li>
+                                <li><a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                            <table class="table table-condensed table-striped">
+                                <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Name</th>
+                                    <th>Email Address</th>
+                                    <th>Contact #</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Anuj Pairkh</td>
+                                    <td>anujparikh1@gmail.com</td>
+                                    <td>248-***-****</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Including Javascript required for some functionalities -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
